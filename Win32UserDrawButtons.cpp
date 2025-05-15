@@ -291,7 +291,7 @@ LRESULT CALLBACK NewBtnProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
     msgStr = PadString(msgStr, ' ', 6);
     msgName = PadString(msgName, ' ', 20);
     wParamStr = PadString(wParamStr, ' ', 10);
-    lParamStr = PadString(lParamStr, ' ', 11);
+    lParamStr = PadString(lParamStr, ' ', 12);
 
     StringCchPrintf(szBuff, bufferSize, TEXT("%s | %p | %s | %s | %s | %s | %s | %s | %s \n"), currDateTime.c_str(), hWnd, controlName.c_str(), msgStr.c_str(), msgName.c_str(), wParamStr.c_str(), lParamStr.c_str(), L"NewBtnProc", subMsg.c_str());
     if (bWinMsgDebugEnabled == true)
@@ -586,7 +586,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
     msgStr = PadString(msgStr, ' ', 6);
     msgName = PadString(msgName, ' ', 20);
     wParamStr = PadString(wParamStr, ' ', 10);
-    lParamStr = PadString(lParamStr, ' ', 11);
+    lParamStr = PadString(lParamStr, ' ', 12);
 
     StringCchPrintf(szBuff, bufferSize, TEXT("%s | %p | %s | %s | %s | %s | %s | %s | %s \n"), currDateTime.c_str(), hWnd, controlName.c_str(), msgStr.c_str(), msgName.c_str(), wParamStr.c_str(), lParamStr.c_str(), L"WndProc   ", subMsg.c_str());
 
